@@ -23,3 +23,17 @@ Make sure your ~/.ocamlinit file has the following lines:
 open Core.Std
 ```
 
+## Getting started
+
+Write your code in a file with the extension ".ml".
+
+To use utop, simply run:
+```
+$ utop
+```
+
+To read, compile and execute source phrases from the given file, run:
+```
+#use "<file_name>.ml";;
+```
+
