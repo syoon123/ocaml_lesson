@@ -48,7 +48,8 @@ let rec merge_sort xs =
 ;;
 merge_sort [2;6;9;3;5;8;4;1;7];;
 
-(*type 'a binary_tree =
+(*
+type 'a binary_tree =
   | Leaf of 'a
   | Node of 'a * 'a binary_tree * 'a binary_tree
 
