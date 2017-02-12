@@ -27,8 +27,9 @@ Given the constructed type binary_tree:
 ```
 type 'a binary_tree =
   | Leaf of 'a
-  | Node of 'a * 'a binary_tree * 'a binary_tree
+  | Node of 'a * 'a binary_tree * 'a binary_tree  
 ```
+Write a function that...
 #### Problem 5.
 ...determines whether a tree is symmetric.
 #### Problem 6.
