@@ -36,4 +36,3 @@ To read, compile and execute source phrases from the given file, run:
 ```
 #use "<file_name>.ml";;
 ```
-
