@@ -1,11 +1,12 @@
-(* Problem 1a *)  
+(* Problem 1 *)  
 let rec subsets xs =
   match xs with
   | [] -> [[]]
   | a::b -> let n = (subsets b) in n @ (List.map n (fun x -> a::x))
 ;;   
-
-(* Problem 1b *)
+subsets [1;2;3];;
+  
+(* Problem 2 *)
 let rec choose k xs = match xs with
   | [] -> if k = 0 then [[]] else []
   | a::b ->
@@ -13,8 +14,9 @@ let rec choose k xs = match xs with
      then let n = choose k b in n @ (List.map (choose (k-1) b) (fun x -> a :: x))
      else [xs]
 ;;
-
-(* Problem 2a *)
+choose 2 [1;2;3;4];;
+  
+(* Problem 3 *)
 let rec quick_sort xs =
   match xs with
   | [] -> xs
@@ -22,8 +24,9 @@ let rec quick_sort xs =
   | x::a -> let (p1, p2) = List.partition_tf a (fun s -> s<x) in
             quick_sort(p1) @ (x :: quick_sort(p2))
 ;;
+quick_sort [2;6;9;3;5;8;4;1;7];;
 
-(* Problem 2b *)
+(* Problem 4 *)
 let rec merge_sort xs =
 
   let rec weave l1 l2 =
@@ -42,47 +45,47 @@ let rec merge_sort xs =
   | a::tl ->
      let (p1, p2) = List.split_n xs ((List.length xs)/2) in
      weave (merge_sort p1) (merge_sort p2)           
-;;  
+;;
+merge_sort [2;6;9;3;5;8;4;1;7];;
 
-
-type 'a binary_tree =
+(*type 'a binary_tree =
   | Leaf of 'a
   | Node of 'a * 'a binary_tree * 'a binary_tree
 
-(* Problem 3a *)
+(* Problem 5 *)
 let symmetric tree =
   
 ;;
 
-(* Problem 3b *)
+(* Problem 6 *)
 let compare_trees tree1 tree2 =
 ;;
 
-(* Problem 3c *)
+(* Problem 7 *)
 let rec inorder tree =
 ;;
 
-(* Problem 3d *)
+(* Problem 8 *)
 let rec preorder tree =
 ;;
 
-(* Problem 3e *)
+(* Problem 9 *)
 let rec postorder tree =
 ;;
 
-(* Problem 3f *)
+(* Problem 10 *)
 let rec max_tree tree =
 ;;
 
-(* Problem 3g *)
+(* Problem 11 *)
 let rec tree_sum tree =
 ;;
 
-(* Problem 3h *)
+(* Problem 12 *)
 let nth_level tree n =
 ;;
  
-(* Problem 3i *)
+(* Problem 13 *)
 let depth tree =
 ;;
-  
+*)
