@@ -36,3 +36,8 @@ To read, compile and execute source phrases from the given file, run:
 ```
 #use "<file_name>.ml";;
 ```
+
+## Some helpful links
+* [Core Documentation](https://ocaml.janestreet.com/ocaml-core/latest/doc/core_kernel/)
+* [OCaml Language Cheat Sheet](http://www.ocamlpro.com/files/ocaml-lang.pdf)
+* [OCaml Standard Library Cheat Sheet](http://www.ocamlpro.com/files/ocaml-stdlib.pdf)
