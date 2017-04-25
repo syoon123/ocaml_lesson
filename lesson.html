@@ -3,15 +3,24 @@
 
   <head>
     <title>OCaml Lesson</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
-  <body>
-
+  <body style = "background-color: mintcream">
+  <div class = "container">
+      <div class = "jumbotron" style = "background-color: lightsteelblue">
     <h1>A ~Really~ Brief Intro to OCaml</h1>
     <h3>Team mWoo: Sarah Yoon, Max Bertfield, Brian Lu</h3>
-
+</div>
     <hr>
-    <h2>Section 1. What is OCaml?</h2>
+          <div class = "panel panel-success">
+    <div class = "panel-heading">
+      <h1>
+        Section 1. What is OCaml?
+      </h1>
+        </div>
+              <div class = "panel-body">
     <p>
       OCaml is an objective categorical abstract machine language developed for more than 20 years by researchers at Inria. Its emphasis is expressiveness and safety, and it has an advanced type system in order to help catch mistakes. Because of this, OCaml is widely used where a single mistake can cost millions and where speed matters (most famously used by the quantitative trading firm, Jane Street).
       <br><br>
@@ -34,11 +43,16 @@
 	<li>Run-time type errors for polymorphism</li>
 	<li>Standard library limited</li>
 	<li>Does not support multicore processing</li>
-      </ul>      
+      </ul>
     </p>
-
+              </div>
+          </div>
     <hr>
+      <div class = "panel panel-primary">
+      <div class = "panel-heading">
     <h2>Section 2. Overview of OCaml Tools/Concepts</h2>
+          </div>
+              <div class = "panel-body">
     <h3>Super Strict Typing</h3>
     <p>
       OCaml is statically typed. You never have to declare variable types in functions because of OCaml's type inferencing. However, there is no implicit casting in OCaml (i.e., 1+2.0 does not equal 3.0). There are sometimes separate operators for different types, such as + for ints and +. for floats.
@@ -59,7 +73,7 @@
     </p>
     <h3>Polymorphism</h3>
     <p>
-      Values in a function can be assigned generic types with variable names. You don't have to write the same function multiple times for different types (think generic types in Java). OCaml will infer a polymorphic value until it is forced to assign one.      
+      Values in a function can be assigned generic types with variable names. You don't have to write the same function multiple times for different types (think generic types in Java). OCaml will infer a polymorphic value until it is forced to assign one.
     </p>
     <h3>Lists and Records</h3>
     <p>
@@ -99,8 +113,14 @@
 	  ...
 	</pre>
 	    </code>
+        </div>
+          </div>
     <hr>
+      <div class = "panel panel-info">
+      <div class = "panel-heading">
     <h2>Section 3. Installation/Running Instructions</h2>
+      </div>
+            <div class = "panel-body">
     <h3>Installation</h3>
     <ol>
       <li>Install OPAM, the OCaml package manager, and run<br>
@@ -121,8 +141,15 @@
     <h3>Debugging</h3>
     <p>
       OCaml provides easy function tracing in the interactive shell using the #trace function. You can also use <code>ocamldebug</code> by passing it a comiled .ml file, using the debugger shell to trace back up the stack from when the error occurred. It also has an emacs version that will send you directly to where the bug is in your code!
+          </p>
+          </div>
+      </div>
     <hr>
+      <div class = "panel panel-danger">
+      <div class = "panel-heading">
     <h2>Section 4. A Few Problems</h2>
+      </div>
+          <div class = "panel-body">
     <ol>
       <li>Write a function that takes a list and returns a list of all its subsits.<br>
 	<code><pre>
@@ -144,8 +171,10 @@
     </ol>
     <br><br>
     <a href="https://github.com/syoon123/ocaml_lesson">See solutions to these problems here.</a>
+          </div>
+      </div>
     <br><br><br>
-    
+    </div>
   </body>
 
 </html>
